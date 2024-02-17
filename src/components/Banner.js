@@ -41,42 +41,43 @@ export const Banner = () => {
 
     return (
         <section className="banner" id="home">
-            <Container>
-                <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7}>
-                    <div class="portfolio-section">
-                        <span class="tagline">Welcome to my Portfolio</span>
-                        <p>I'm a fifth-semester Computer Science student at TU Graz. I have a strong interest in technology and how we can apply it to solve complex problems.</p>
-                        <p>I'm currently seeking internship opportunities where I can further explore areas like AI and software development. I'm excited about the chance to contribute to real-world projects and learn from experienced professionals.</p>
-                        <p>Take a look at my CV to see my progress in both my academic and personal tech endeavors. If you have an opportunity or project in mind, let's connect—I'm ready to dive in and collaborate on something amazing.</p>
-                        <button 
-                        onClick={() => {
-                        window.open('/Fedja_Mulabegovic-1.pdf', '_blank');
-                        }} 
-                        className="vvd"
-                        >
-                        Download my CV <ArrowRightCircle size={25} />
-                        </button>
-                    </div>
-
-                    </Col>
-                    <Col xs={12} md={6} xl={5} className="text-center">
-                        <FontAwesomeIcon 
-                            icon={faLaptopCode} 
-                            size="10x" 
-                            className="bright-blue-hover" 
-                            style={{ fontSize: '200px' }} 
-                        />
-                        <div 
-                            className="bright-blue-hover" 
-                            style={{ fontSize: '2rem', fontWeight: 'bold', marginTop: '1rem' }}
-                        >
-                        Fedja Mulabegovic
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
+          <Container>
+            <Row className="align-items-center">
+              <Col xs={12} md={6} xl={7}>
+                <div className="portfolio-section">
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <p>I'm a fifth-semester Computer Science student at TU Graz. I have a strong interest in technology and how we can apply it to solve complex problems.</p>
+                  <p>I'm currently seeking internship opportunities where I can further explore areas like AI and software development. I'm excited about the chance to contribute to real-world projects and learn from experienced professionals.</p>
+                  <p>Take a look at my CV to see my progress in both my academic and personal tech endeavors. If you have an opportunity or project in mind, let's connect—I'm ready to dive in and collaborate on something amazing.</p>
+                  {/* Updated download link */}
+                  <a 
+                    href={`${process.env.PUBLIC_URL}/Fedja_Mulabegovic-1.pdf`} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="vvd" // Ensure this class is styled appropriately for a download link
+                  >
+                    Download my CV <ArrowRightCircle size={25} />
+                  </a>
+                </div>
+              </Col>
+              <Col xs={12} md={6} xl={5} className="text-center">
+                <FontAwesomeIcon 
+                  icon={faLaptopCode} 
+                  size="10x" 
+                  className="bright-blue-hover" 
+                  style={{ fontSize: '200px' }} 
+                />
+                <div 
+                  className="bright-blue-hover" 
+                  style={{ fontSize: '2rem', fontWeight: 'bold', marginTop: '1rem' }}
+                >
+                  Fedja Mulabegovic
+                </div>
+              </Col>
+            </Row>
+          </Container>
         </section>
-    );
+      );
+      
 };
  
