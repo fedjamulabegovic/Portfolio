@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap');
+
+.project-section {
+    /* Existing styles... */
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 50px; /* Adjust this value to move content up */
+    margin-bottom: 20px;
+    /* Removed the min-height property to stop forcing the section to be the full height of the viewport */
+    padding-bottom: 50px; /* Adjust this value to control the space at the bottom */
+}
+
+
+.project-section {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: white;
+   
+    /* The rest of your styles remain unchanged */
+}
+
+
+/* Style for the row that contains the project cards */
+.project-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* This centers the cards within the row */
+    gap: 30px; /* This adds space between the cards */
+}
+
+/* Style for the columns that contain the project cards */
+.project-col {
+    display: flex;
+    justify-content: center; /* Center the card within the column */
+}
+
+
+
+
+
+/* Style for each project card */
+.project-card-view {
+    margin: 10px; /* Space around cards */
+    padding: 20px; /* Padding inside cards */
+    background-color: #2c2c2c; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: flex; /* Enable flex layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    animation: fadeIn 1.5s ease-out; /* Fade in animation */
+}
+
+/* Adjust the title to be above the icon */
+.project-card-title {
+    order: 1; /* Ensure the title comes first */
+    margin-bottom: 1rem;
+}
+
+/* Style for the icon */
+.project-icon {
+    order: 2; /* The icon comes after the title */
+    font-size: 2em;
+    margin: 10px;
+    color: #333;
+    /* Rest of your icon styles */
+}
+
+/* Style for the project description */
+.project-card-description {
+    order: 3; /* Description comes after the icon */
+    /* Rest of your description styles */
+}
+
+/* Style for the view project button */
+.project-card-button {
+    order: 4; /* Button comes last */
+    margin-top: 1rem;
+    /* Rest of your button styles */
+}
+
+/* Add animations as per your requirement */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ensure h2 is centered and has space above and below */
+.project-section h2 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 2rem; /* Space below the title */
+    font-size: 48px;
+    animation: popIn 1s ease-out forwards;
+}
+
+/* Continue with the rest of your keyframes and animations */
+@keyframes triangleMotion {
+    0%, 100% {
+      transform: translateX(0) translateY(0);
+    }
+    25% {
+      transform: translateX(-10px) translateY(-10px);
+    }
+    50% {
+      transform: translateX(10px) translateY(-10px);
+    }
+    75% {
+      transform: translateX(10px) translateY(10px);
+    }
+  }

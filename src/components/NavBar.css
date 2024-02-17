@@ -1,0 +1,85 @@
+/* NavBar.css */
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap');
+
+
+.nav-link, .navbar-brand {
+  font-family: 'Orbitron', sans-serif;
+  margin-right: 1rem; 
+}
+
+.nav-link, .navbar-brand, .vvd {
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  color: white;
+  text-shadow: none;
+}
+
+/* Hover and active/focus state for your navigation text links */
+.nav-link:hover, .navbar-brand:hover, .vvd:hover,
+.nav-link:active, .navbar-brand:active, .vvd:active,
+.nav-link:focus, .navbar-brand:focus, .vvd:focus,
+.navbar-link.active /* Add this line to target the active class */ {
+  color: #00fffc; /* Color when hovering, focused, or active */
+  text-shadow: 0px 0px 10px rgba(0, 255, 252, 0.7); /* Glowing effect */
+  outline: none; /* Remove focus outline */
+}
+
+.btn {
+  font-size: 20px; /* Increase font size */
+  padding: 14px 28px; /* Increase padding */
+}
+
+.nav-link:first-of-type {
+  margin-left: 3rem; /* Increase left margin */
+}
+
+.navbar-link {
+  font-size: 1.5rem; /* Increase font size */
+  /* Add any additional styles needed for .navbar-link here */
+}
+
+
+/* OVO JE ICONA HOME SKILLS PROJECT 
+
+/* Base color for all icons */
+.navbar-text .connect-container a {
+  color: #fff; /* White color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* LinkedIn icon hover color */
+.navbar-text .connect-container a.linkedin:hover {
+  color: #0A66C2; /* LinkedIn's brand color */
+}
+/* Increase right margin of the LinkedIn icon */
+.navbar-text .connect-container a.linkedin {
+  margin-right: 20px; /* or more, depending on the space you want */
+}
+
+/* Alternatively, increase left margin of the "Let's Connect" button */
+.vvd {
+  margin-left: 20px; /* or more, depending on the space you want */
+}
+
+
+/* GitHub icon hover color */
+.navbar-text .connect-container a.github:hover {
+  color: #181717; /* GitHub's brand color */
+}
+
+/* Neon glow effect for "Let's Connect" button */
+.vvd {
+  box-shadow: 0 0 5px rgba(0, 255, 252, 0.75), 0 0 15px rgba(0, 255, 252, 0.5), 0 0 30px rgba(0, 255, 252, 0.25); /* Initial soft glow */
+  border-radius: 25px; /* Rounded edges for a softer look */
+  background-color: #000000; /* Dark background to enhance neon effect */
+  border: 1px solid rgba(0, 255, 252, 0.75); /* Subtle border to complement the glow */
+}
+
+.vvd:hover {
+  box-shadow: 0 0 8px rgba(0, 255, 252, 1), 0 0 20px rgba(0, 255, 252, 0.75), 0 0 35px rgba(0, 255, 252, 0.5); /* Intensified glow effect on hover */
+  color: #00fffc; /* Adjust color to match the glow */
+  text-shadow: 0 0 10px #00fffc, 0 0 20px #00fffc; /* Enhanced glowing text effect */
+}
+
+.vvd:active, .vvd:focus {
+  transform: scale(0.98); /* Slightly shrink on click for a tactile feel */
+}

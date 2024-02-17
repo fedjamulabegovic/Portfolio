@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap');
+
+.banner {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  /* Add other styling for the banner as needed */
+}
+
+.tagline, .portfolio-section p, .portfolio-section button {
+    animation: fadeIn 1.5s ease-out; /* Apply fade-in animation to tagline, paragraphs, and button */
+}
+
+.portfolio-section button:hover {
+    animation: zoomBounce 0.5s ease; /* Apply zoomBounce animation on hover for the button */
+}
+
+/* Ensure all text elements within the banner use the Orbitron font and have white text */
+.banner h1,
+.banner .tagline,
+.banner p,
+.banner .wrap {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+.banner p {
+  font-size: 20px; /* Set the font size to 20px */
+  line-height: 1.6; /* Improve line spacing for readability */
+  text-align: justify; /* Align text to both left and right margins */
+  margin-bottom: 20px; /* Add space below paragraphs for better separation */
+}
+
+
+.banner button {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  /* Additional button styling here */
+}
+
+
+/* CSS file */
+.bright-blue-hover:hover {
+    color: #00fffc; /* Bright blue color on hover */
+}
+
+/* Define keyframes for a pulse animation */
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(0, 255, 252, 0.7);
+    }
+    70% {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px 10px rgba(0, 255, 252, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(0, 255, 252, 0);
+    }
+  }
+  
+  .vvd {
+    display: inline-block;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    color: #ffffff !important;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    background-color: black; /* Set the background color to black */
+    padding: 10px 20px; /* Add padding for better visibility */
+  }
+  
+  /* Hover effect for "Let's Connect" */
+  .vvd:hover {
+    color: #ffffff;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+  }
+  
+  /* After element for adding underline effect on hover */
+  .vvd::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #00fffc;
+    transition: width 0.3s;
+  }
+  
+  /* Change width of underline on hover */
+  .vvd:hover::after {
+    width: 100%;
+  }
+  
+  /* Active and focus states for "Let's Connect" for accessibility */
+  .vvd:active, .vvd:focus {
+    outline: none;
+  }
+
+
+  .banner {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+.banner h1, .banner .tagline, .banner p, .banner .wrap {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+.banner .tagline {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  font-size: 36px; /* Adjust the font size as needed */
+  display: inline-block;
+  animation: slideInFromLeft 1.5s ease-out;
+  margin-bottom: 30px; /* Adds space below the tagline for better separation */
+}
+
+
+@keyframes slideInFromLeft {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+  

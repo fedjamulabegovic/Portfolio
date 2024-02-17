@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap');
+
+
+.skill-section {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 150px; /* You may adjust this value to position the section higher or lower */
+    margin-bottom: 20px;
+}
+
+.skill-slider .item {
+    text-align: center;
+    margin: 10px 0; /* Adjust the margin to control spacing between items */
+}
+
+.skill-slider .item img {
+    margin: auto;
+}
+
+.skill-slider .item h5 {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    margin-top: 10px;
+    font-size: 20px; /* Set the font size to 20px */
+    animation: fadeIn 1.5s ease-out;
+}
+
+
+.icon-c, .icon-cpp, .icon-csharp {
+    /* Common styles for all icons */
+    display: inline-block;
+    font-size: 2em; /* Icon size */
+    width: 60px; /* Width of the icon area */
+    height: 60px; /* Height of the icon area */
+    line-height: 60px; /* Center text vertically */
+    text-align: center; /* Center text horizontally */
+    background-color: #f0f0f0; /* Icon background color */
+    color: #333; /* Icon text color */
+    border-radius: 10px; /* Rounded corners for the icon area */
+    margin: 10px; /* Space around icons */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Simple shadow for depth */
+}
+
+/* You can add individual styles for each icon if needed */
+.icon-c::after {
+    content: 'C';
+}
+
+.icon-cpp::after {
+    content: 'C++';
+}
+
+.icon-csharp::after {
+    content: 'C#';
+}
+
+
+.skill-slider .item h5 {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    margin-top: 10px;
+    font-size: 24px; /* Increased font size */
+    animation: fadeIn 1.5s ease-out; /* Apply fade-in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+ to { opacity: 1; transform: translateY(0); }
+}
+
+.skill-slider .item {
+    text-align: center;
+    margin: 10px 0;
+    animation: fadeIn 1.5s ease-out; /* Apply fade-in animation to the whole item */
+}
+
+
+.skill-slider .item:hover {
+    animation: zoomBounce 0.5s ease;
+}
+
+@keyframes zoomBounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Style for the Skills heading */
+.skill-section h2 {
+    font-size: 48px; /* Increase the font size */
+    animation: popIn 1s ease-out forwards; /* Apply the animation */
+}
+
+/* Keyframes for pop-in effect */
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.skills-description {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 20px; /* Set the font size to 20px */
+    margin: 0 20px; /* Add horizontal margin */
+    padding: 20px 0; /* Add vertical padding */
+    text-align: justify; /* Justify the text for better readability */
+    animation: fadeIn 1.5s ease-out; /* Apply fade-in animation */
+}

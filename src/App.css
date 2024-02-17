@@ -1,6 +1,13 @@
+/* App.css or StarBackground.css */
 .App {
-  text-align: center;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+  /* background-image is not needed here since it's being applied inline in the component */
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +43,4 @@
     transform: rotate(360deg);
   }
 }
+
