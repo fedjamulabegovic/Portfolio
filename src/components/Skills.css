@@ -116,3 +116,56 @@
     text-align: justify; /* Justify the text for better readability */
     animation: fadeIn 1.5s ease-out; /* Apply fade-in animation */
 }
+
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap');
+
+/* ...existing styles... */
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .skill-section {
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      color: white;
+      padding-top: 100px; /* Reduced padding for mobile */
+      margin-bottom: 20px;
+  }
+
+  .skill-slider .item {
+      margin: 10px 0; /* Maintain margin for spacing */
+  }
+
+  .skill-slider .item img {
+      width: 80%; /* Adjust image width to be responsive */
+      height: auto; /* Adjust image height to maintain aspect ratio */
+      margin: auto;
+  }
+
+  .skill-slider .item h5 {
+      font-size: 18px; /* Smaller font size for mobile */
+      margin-top: 5px; /* Reduced margin top */
+  }
+
+  .icon-c, .icon-cpp, .icon-csharp {
+      font-size: 1.5em; /* Smaller icon size */
+      width: 50px; /* Smaller width */
+      height: 50px; /* Smaller height */
+      line-height: 50px; /* Adjust line height for vertical centering */
+      margin: 5px; /* Reduced space around icons */
+  }
+
+  .skills-description {
+      font-size: 16px; /* Smaller font size for descriptions */
+      margin: 0 10px; /* Reduced horizontal margin */
+      padding: 10px 0; /* Reduced vertical padding */
+      text-align: left; /* Align text to the left */
+  }
+
+  /* Adjustments for the skills heading */
+  .skill-section h2 {
+      font-size: 36px; /* Smaller font size for the heading */
+  }
+  
+  /* You may add other styles that need to change on mobile here */
+}

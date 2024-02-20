@@ -110,3 +110,43 @@
       transform: translateX(10px) translateY(10px);
     }
   }
+
+
+
+
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+   
+    .project-section h2 {
+        font-size: 36px; /* Match the font size for the heading with the skills section */
+        /* Other styling to match the mobile view of the skills section */
+        padding-bottom: 1rem; /* Adjust padding to match skills section if needed */
+        margin-top: 1rem; /* Adjust margin to match skills section if needed */
+    }
+
+    .project-section h3 {
+        font-size: 24px; /* Adjust the subtitle to match the skills section subtitle */
+        /* Other responsive adjustments as needed */
+    }
+
+    /* Adjust project cards for a balanced look with the subtitle size */
+    .project-card-view {
+        padding: 15px; /* Adjust padding for mobile */
+        /* Adjust margins, width, and other properties as needed for a balanced look */
+    }
+
+    /* Adjust the font size of the text within the project cards if necessary */
+    .project-card-title,
+    .project-card-description {
+        font-size: 18px; /* Example size, adjust as needed */
+    }
+
+    /* Adjust the size of the icons within the project cards if necessary */
+    .project-icon {
+        font-size: 1.5em; /* Adjust icon size to balance with the text */
+    }
+
+    /* ...additional responsive styles... */
+}
+

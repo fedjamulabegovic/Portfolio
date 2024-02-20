@@ -83,3 +83,59 @@
 .vvd:active, .vvd:focus {
   transform: scale(0.98); /* Slightly shrink on click for a tactile feel */
 }
+
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+
+  .navbar-toggler {
+    display: flex; /* Use flex layout for centering */
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+    background-color: #ffffff; /* A light background color for contrast */
+    color: #333333; /* A darker color for the icon itself for visibility */
+    font-size: 1.5em; /* Set the font size to match the laptop icon size */
+    padding: 8px; /* Adjust padding to ensure the overall button is similar in size to the laptop icon */
+    width: 50px; /* Set a fixed width to match the laptop icon container, if necessary */
+    height: 50px; /* Set a fixed height to match the laptop icon container, if necessary */
+    border-radius: 5px; /* Optional: rounded corners for the button */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: a subtle shadow for depth */
+    border: 1px solid #dddddd; /* Optional: a border to define the button's edges */
+    margin-right: 10px; /* Add margin to space it out from the nav links */
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* Add any other styles needed for your nav */
+  }
+  
+  /* Adjusting this selector to target the individual links within .navbar-nav */
+  .navbar-nav .navbar-link {
+    margin: 0 10px;
+    /* Remove margin-top as it should not be needed */
+    /* font-size may not be needed unless you want to resize text within the nav links */
+  }
+  
+  .connect-container {
+    display: flex;
+    flex-direction: row; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    margin-bottom: 20px; /* Add some bottom margin to separate from the navbar-nav */
+  }
+  
+  .connect-container a {
+    margin: 0 10px; /* Adjust spacing */
+    margin-top: 0px; /* Adjust vertical positioning */
+    font-size: 0.8em; /* Attempt to adjust icon size, but may not affect SVG directly */
+  }
+  
+  
+
+}
+
+
+

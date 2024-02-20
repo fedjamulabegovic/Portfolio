@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap');
 
+.portfolio-section {
+  /* Adjust the padding to create space within the container */
+  padding: 20px; 
+  /* Optional: max-width can help with readability on very wide screens */
+  max-width: 800px; 
+  /* Center the section for aesthetics */
+  margin: 0 auto; 
+}
+
 .banner {
   font-family: 'Orbitron', sans-serif;
   color: white;
@@ -125,3 +134,49 @@
     to { opacity: 1; transform: translateX(0); }
 }
   
+
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .banner .tagline {
+      font-size: 24px; /* Adjust the font size down */
+      margin-bottom: 15px; /* Reduce the bottom margin */
+  }
+
+  .banner p {
+      font-size: 16px; /* Smaller font size */
+      line-height: 1.4; /* Smaller line height */
+      text-align: left; /* Remove justify alignment on narrow screens if necessary */
+      margin-bottom: 10px; /* Less space between paragraphs */
+  }
+
+  .banner .portfolio-section {
+      padding: 0 15px; /* Add padding to the left and right of text on small screens */
+  }
+
+  /* Adjust the padding of the main container if it's too wide */
+  .banner .container {
+      padding-left: 10px; /* Adjust left padding */
+      padding-right: 10px; /* Adjust right padding */
+  }
+
+  /* Adjust the size of the download CV link and its icon */
+  .vvd {
+      font-size: 18px; /* Smaller font size */
+      padding: 8px 16px; /* Smaller padding */
+      margin-bottom: 20px; /* Add space below the download button */
+  }
+
+  .vvd .ArrowRightCircle {
+      /* Adjust icon size if necessary, otherwise remove this rule */
+  }
+
+  /* If the FontAwesome icon is too large, adjust its size */
+  .faLaptopCode {
+      font-size: 100px; /* Smaller icon size */
+      margin-top: 20px; /* Add space above the icon */
+  }
+  
+  /* Additional adjustments can be made here */
+}
+
