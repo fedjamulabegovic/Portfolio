@@ -160,21 +160,41 @@
       padding-right: 10px; /* Adjust right padding */
   }
 
-  /* Adjust the size of the download CV link and its icon */
-  .vvd {
-      font-size: 18px; /* Smaller font size */
-      padding: 8px 16px; /* Smaller padding */
-      margin-bottom: 20px; /* Add space below the download button */
+  .vvd, .vvd:active, .vvd:focus {
+    display: block; /* Use block display */
+    text-align: center; /* Center text horizontally */
+    font-size: 18px; /* Smaller font size */
+    padding: 8px 16px; /* Smaller padding */
+    margin-bottom: 20px; /* Add space below the download button */
+    transition: none; /* Disable transitions */
+    /* Other styles */
   }
-
+  
+  .vvd a {
+    display: inline-block; /* Align the link inline with text centering */
+    line-height: normal; /* Adjust line-height to center the text vertically */
+    vertical-align: middle; /* Align inline-block elements in the middle vertically */
+  }
+  
   .vvd .ArrowRightCircle {
-      /* Adjust icon size if necessary, otherwise remove this rule */
+    vertical-align: middle; /* Align the icon in the middle vertically */
+    /* Adjust icon size if necessary */
+  }
+  
+
+
+
+  .faLaptopCode {
+    font-size: 100px; /* Adjust the icon size as needed */
+    margin-top: 0; /* You might want to remove the top margin if it's not needed */
+    align-self: center; /* Center the laptop icon vertically within the flex container */
   }
 
-  /* If the FontAwesome icon is too large, adjust its size */
-  .faLaptopCode {
-      font-size: 100px; /* Smaller icon size */
-      margin-top: 20px; /* Add space above the icon */
+
+  .bright-blue-hover {
+    font-size: 100px; /* Adjust the icon size as needed */
+    margin-top: 0; /* You might want to remove the top margin if it's not needed */
+    align-self: center; /* Center the laptop icon vertically within the flex container */
   }
   
   /* Additional adjustments can be made here */
